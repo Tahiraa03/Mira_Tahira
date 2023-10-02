@@ -63,11 +63,11 @@ a {
 }
 
 .Lokasi {
-  background-color: #green;
+  background-color: #FFE4E1;
 }
 
 .Instagram {
-  background-color: #pink;
+  background-color: #FF1493;
   margin-right: 10px;
 }
 
@@ -107,7 +107,7 @@ a {
 .heading {
   padding-top: 60px;
   padding-bottom: 30px;
-  color: #beige;
+  color: #FFDEAD;
 }
 
 .heading h2 {
