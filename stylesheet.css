@@ -148,7 +148,7 @@ img {
 
 .message-wrapper {
   border-bottom: 1px solid #eee;
-  background-color : rgb(194, 242, 248);
+  background-color : rgb(226, 184, 182);
   padding-bottom: 80px;
   text-align: center;
 }
@@ -168,7 +168,7 @@ img {
 
 .main {
   padding: 100px 80px;
-  background-color: rgb(151, 201, 247);
+  background-color: rgb(204, 131, 127);
 }
 
 .copy-container h1 {
