@@ -14,23 +14,46 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!nama || !email || !alamat || !jumlah) {
             alert("Harap isi semua kolom formulir.");
         } else {
-            // Kirim data pemesanan ke server (anda dapat menambahkan logika ini di sini)
-            
-            // Tampilkan pesan sukses
-            const pesanSukses = document.createElement("div");
-            pesanSukses.className = "pesan-sukses";
-            pesanSukses.textContent = "Pemesanan berhasil! Terima kasih telah berbelanja di toko kami.";
-            
-            // Bersihkan formulir
-            form.reset();
-            
-            // Tambahkan pesan sukses ke halaman
-            form.parentElement.appendChild(pesanSukses);
-            
-            // Hilangkan pesan sukses setelah beberapa detik (opsional)
-            setTimeout(() => {
-                pesanSukses.style.display = "none";
-            }, 5000);
+            // Kirim data pemesanan ke server menggunakan Fetch API
+            fetch("proses_pemesanan.php", {
+                method: "POST",
+                body: JSON.stringify({ nama, email, alamat, jumlah }),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    // Pemesanan berhasil
+                    tampilkanPesanSukses();
+                } else {
+                    // Pemesanan gagal
+                    alert("Pemesanan gagal. Silakan coba lagi nanti.");
+                }
+            })
+            .catch(error => {
+                console.error("Error:", error);
+                alert("Terjadi kesalahan saat mengirim data. Silakan coba lagi nanti.");
+            });
         }
     });
+
+    function tampilkanPesanSukses() {
+        // Buat pesan sukses
+        const pesanSukses = document.createElement("div");
+        pesanSukses.className = "pesan-sukses";
+        pesanSukses.textContent = "Pemesanan berhasil! Terima kasih telah berbelanja di toko kami.";
+
+        // Bersihkan formulir
+        form.reset();
+
+        // Tambahkan pesan sukses ke halaman
+        form.parentElement.appendChild(pesanSukses);
+
+        // Hilangkan pesan sukses setelah beberapa detik (opsional)
+        setTimeout(() => {
+            pesanSukses.style.display = "none";
+        }, 5000);
+    }
 });
