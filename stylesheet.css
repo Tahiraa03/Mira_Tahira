@@ -3,6 +3,27 @@ body {
   font-family: "Lucida Grande";
 }
 
+li {
+  list-style: none;
+}
+
+.header {
+  background-color: #2f5167;
+  color: #FFFFFF;
+  height: 90px;
+}
+
+.header-logo {
+  float: left;
+  font-size: 36px;
+  padding: 20px 40px;
+}
+
+.header-list li {
+  float: left;
+  padding: 33px 20px;
+}
+
 a {
   text-decoration: none;
 }
@@ -14,10 +35,10 @@ a {
 }
 
 .top-wrapper {
-  padding: 180px 0 150px 0;
-  background-image: url(https://i.pinimg.com/564x/9d/21/e2/9d21e2096f5986a37cdc3947ab205a38.jpg);
+  padding: 180px 0 100px 0;
+  background-image: url("https://www.instagram.com/p/Cvm1FGjLoCP/?igshid=NjIwNzIyMDk2Mg==");
   background-size: cover;
-  color: white;
+  color: rgb(2, 65, 136);
   text-align: center;
 }
 
@@ -41,22 +62,28 @@ a {
   margin: 10px 0;
 }
 
-.signup {
-  background-color: #239b76;
+.Lokasi {
+  background-color: #green;
 }
 
-.facebook {
-  background-color: #3b5998;
+.Instagram {
+  background-color: #pink;
   margin-right: 10px;
 }
 
-.twitter {
-  background-color: #55acee;
+.WhatsApp1 {
+  background-color:#239b76;
+  margin-right: 10px;
+}
+
+.WhatsApp2 {
+  background-color:#239b76;
+  margin-right: 10px;
 }
 
 .btn {
   padding: 12px 24px;
-  color: white;
+  color: grey;
   display: inline-block;
   opacity: 0.8;
   border-radius: 4px;
@@ -70,43 +97,6 @@ a {
   margin-right: 5px;
 }
 
-header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
-  /* Ubah position ke fixed, dan top ke 0 */
-  position: fixed;
-  top: 0;
-  /* Ubah z-index ke 10 */
-  z-index: 10;
-}
-
-.logo {
-  width: 124px;
-  margin-top: 20px;
-}
-
-.header-left {
-  float: left;
-}
-
-.header-right {
-  float: right;
-  background-color: rgba(255, 255, 255, 0.3);
-  transition: all 0.5s;
-}
-
-.header-right:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-}
-
 .lesson-wrapper {
   height: 500px;
   padding-bottom: 80px;
@@ -117,7 +107,7 @@ header {
 .heading {
   padding-top: 60px;
   padding-bottom: 30px;
-  color: #5f5d60;
+  color: #beige;
 }
 
 .heading h2 {
@@ -132,6 +122,10 @@ header {
 .lesson-icon {
   position: relative;
 }
+img {
+  width: 150px;
+  height: 150px;
+    }
 
 .lesson-icon p {
   position: absolute;
@@ -154,6 +148,7 @@ header {
 
 .message-wrapper {
   border-bottom: 1px solid #eee;
+  background-color : rgb(194, 242, 248);
   padding-bottom: 80px;
   text-align: center;
 }
@@ -171,15 +166,83 @@ header {
   box-shadow: none;
 }
 
-footer img {
-  width: 125px;
+.main {
+  padding: 100px 80px;
+  background-color: rgb(151, 201, 247);
 }
 
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
+.copy-container h1 {
+  font-size: 140px;
 }
 
-footer {
-  padding-top: 30px;
+.copy-container h2 {
+  font-size: 60px;
+}
+
+.copy-container span {
+  color: #ff4a4a;
+}
+
+.contents {
+  height: 500px;
+  margin-top: 100px;
+}
+
+.section-title {
+  border-bottom: 2px solid #dee7ec;
+  font-size: 28px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+}
+
+.contents-item {
+  float: left;
+  margin-right: 40px;
+}
+img {
+  width: 350px;
+  height: 350px;
+    }
+
+.contents-item p {
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+.contact-form {
+  padding-top: 100px;
+}
+
+input, textarea {
+  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+  font-size: 18px;
+  border: 1px solid #dee7ec;
+}
+
+.contact-submit {
+  background-color: #dee7ec;
+  color: #000000;
+}
+
+.footer {
+  background-color: #2f5167;
+  color: #fff;
+  height: 120px;
+  padding: 40px;
+}
+
+.footer-logo {
+  float: left;
+  font-size: 32px;
+}
+
+.footer-list {
+  float: right;
+}
+
+.footer-list li {
+  padding-bottom: 20px;
 }
