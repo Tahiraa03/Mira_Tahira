@@ -57,3 +57,18 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 5000);
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+    const beliSekarangButton = document.getElementById("beliSekarang");
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+});
+
+    function beliSekarang() {
+        // Di sini Anda dapat menambahkan logika apa yang ingin dilakukan saat tombol "Beli Sekarang" ditekan.
+        // Misalnya, Anda bisa mengarahkan pengguna ke halaman pembayaran atau menampilkan pesan sukses tambahan.
+        alert("Terima kasih! Anda telah melakukan pemesanan.");
+    }
+});
